@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Layout isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />}>
               <Route path="/" element={<MainPage />} />
               <Route path="login" element={isLoggedIn ? <Navigate to="/"/> : <Login setIsLoggedIn={setIsLoggedIn} />}  />
-              <Route path="browse" element={isLoggedIn ? <Browse /> : <Navigate to="/"/> }/>
+              <Route path="browse" element={isLoggedIn ? <Browse /> : <Navigate to="/login"/> }/>
               <Route path="*" element={<h1>404</h1>} />
           </Route>
       </Routes>
