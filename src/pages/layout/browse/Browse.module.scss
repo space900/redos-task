@@ -1,0 +1,12 @@
+.content{
+  display: flex;
+  justify-content: space-between;
+
+  .item{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+  }
+}
